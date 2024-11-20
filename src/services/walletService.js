@@ -1,4 +1,4 @@
-const WalletModel = require('../models/WalletModel');
+const WalletModel = require('../models/walletModel');
 const solanaHelper = require('../utils/solanaHelper');
 const config = require('../config/config');
 

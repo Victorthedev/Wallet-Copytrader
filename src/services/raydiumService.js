@@ -14,9 +14,9 @@ class RaydiumService {
         if (!this.marketCache.has(marketKey)) {
             const market = await Market.load(
                 this.connection,
-                new PublicKey(process.env.RAYDIUM_MARKET_ID),
+                new PublicKey('srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX'),
                 {},
-                new PublicKey(process.env.RAYDIUM_PROGRAM_ID)
+                new PublicKey('CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C')
             );
             this.marketCache.set(marketKey, market);
         }
